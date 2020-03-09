@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="WebsiteStyle.css">
+    <link rel="script" href="LoginValidation.js">
+    <meta charset="UTF-8">
+    <title>website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+
+
+<div id="admin">
+<h4>Menu</h4>
+<a href="admin.html"> Brugeradministration</a>
+<h1>Bruger administration </h1>
+
+<a href="createUser.html">Opret ny bruger</a>
+
+<table>
+    <th>
+        bruger ID
+    </th>
+    <th>
+        Brugernavn
+    </th>
+    <th>
+        Passwords
+    </th>
+    <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>************</td>
+    </tr>
+
+
+    <tr>
+        <td>2</td>
+        <td>Bob</td>
+        <td>************</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Charlie</td>
+        <td>************</td>
+    </tr>
+</table>
+</div>
+
+
+<div id="createUSer">
+
+    <h1>Opret bruger</h1>
+        <form method="get" action="createUser.html">
+            brugernavn:<br>
+
+            <input type="text" name="brugernavn" ><br>
+            password:<br>
+            <input type="password" name="password"><br>
+
+            <input type ="radio" name="status" value = "true">
+            aktiv<br>
+            <input type ="radio" name="status" value ="false">
+            passiv<br>
+
+            <input type = "checkbox" name="role" value="admin">
+            Administrator<br>
+
+            <input type ="checkbox" name="role" value = "user">
+
+            Bruger <br>
+            <button id="createKnap" type="submit" value="Submit">Gem ændringer</button>>
+            <br>
+        </form>
+
+</div>
+
+
+
+<div id="index">
+
+    <h1>Login side</h1>
+    <img src="../Pictures/DTU.png" width="60" height="100" alt="DTU logo">
+
+    <div class="buffer">
+        <div class="login ">
+            <form >
+                brugernavn:<br>
+                <input id="loginKnap" type="submit" value="Submit">
+                <br>
+                <input id="username" type="text" name="brugernavn" ><br>
+                password:<br>
+                <input id = "password" type="password" name="password"><br>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="LoginValidation.js"></script>
+
+</body>
+</html>
