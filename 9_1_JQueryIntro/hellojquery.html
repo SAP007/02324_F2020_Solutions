@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Jquery test</title>
+    <script>
+        function hello(){
+            var name = $('#name').val();
+            alert("Hello " + name);
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 </head>
 <body>
-
+<input type="text" id="name">Skriv dit navn
+<input type="button" onclick="hello();" value="Hello">
 </body>
 </html>
