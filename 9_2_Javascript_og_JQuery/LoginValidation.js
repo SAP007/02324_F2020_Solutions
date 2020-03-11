@@ -1,3 +1,5 @@
+
+//predefineret bruger
 var user = "Anna";
 var pass = "1234";
 
